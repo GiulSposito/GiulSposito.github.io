@@ -48,9 +48,10 @@
   <article data-timings="">
     <ul>
 <li><p>The application is a simple demonstrative <a href="http://shiny.rstudio.com/">Shiny App</a> made as a course project of  <a href="https://www.coursera.org/course/devdataprod">Developing Data Product</a>, part of <a href="https://www.coursera.org/specializations/jhudatascience">Data Science Specialization</a>, offered by <a href="http://www.jhsph.edu/">John Hopkins Bloomberg School of Plublic Health</a>, at <a href="href=%22http://www.coursera.org">Coursera</a>.</p></li>
-<li><p>The app loads the <a href="https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html">MTCars</a> (Motor Trend Car Road Tests) dataset and allow you to plot, using <a href="http://ggplot2.org/">GGPlo2</a>, any numeric dimention agains another numeric dimension.</p></li>
+<li><p>The app loads the <a href="https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html">MTCars</a>, <em>Motor Trend Car Road Tests</em> dataset and allow you to plot, using <a href="http://ggplot2.org/">GGPlo2</a>, any numeric dimention agains another numeric dimension.</p></li>
 <li><p>It is possible too, choose a factor dimention to group the data points, and also, show a linear model fitted in the chart itself. The application dynimic handle, in the <strong>Server</strong> code, the options of <strong>Parameter Panel</strong>, defined in the <strong>UI</strong>, to plot a chart in the <strong>Chart Panel</strong>.</p></li>
 <li><p>We slip, and covert, some features in the dataset as <em>numeric</em> to be used as X and Y variables, and as <em>factors</em> to be used as grouping options. At the <strong>UI.R</strong> code, we just split the name of the features to be load in the appropriated input widgets, and at the <strong>server.R</strong> code we also convert the relevant numeric features to factors.</p></li>
+<li><p>The project GitHub, with the source code can be find at: <a href="https://github.com/GiulSposito/DDP-Project">https://github.com/GiulSposito/DDP-Project</a></p></li>
 </ul>
 
   </article>
@@ -112,7 +113,7 @@ conditionalPanel(
 
 <slide class="" id="slide-4" style="background:;">
   <hgroup>
-    <h3>ggplot&#39;s aes_string example</h3>
+    <h3>GGPlot aes_string example</h3>
   </hgroup>
   <article data-timings="">
     <pre><code class="r">  library(ggplot2); data(mtcars); mtcars$cyl &lt;- as.factor(mtcars$cyl)
@@ -149,7 +150,7 @@ conditionalPanel(
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=4 title='ggplot&#39;s aes_string example'>
+        data-slide=4 title='GGPlot aes_string example'>
          4
       </a>
     </li>
